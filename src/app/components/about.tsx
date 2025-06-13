@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useMenu } from "../context/useMenu";
+import { Skills } from "./skills";
 // import { Skills } from "./skills";
 
 export function About() {
@@ -51,11 +52,7 @@ export function About() {
         </div>
       </div>
 
-      {/* <Skills /> */}
+      <Skills />
     </section>
   );
 }
-
-//  IMAGE pr-4 w-[430px] sm:w-[640px] sm:h-[500px] lg:w-[560px] lg:h-[560px] rounded-[40px] md:rounded-tr-[40%] md:rounded-tl-[0px] md:rounded-bl-[40%] md:rounded-br-[0] object-cover lg:object-fill
-
-// DIV com tudo: flex flex-col lg:flex-row items-center justify-center space-x-8 space-y-6 tablet:space-y-0
