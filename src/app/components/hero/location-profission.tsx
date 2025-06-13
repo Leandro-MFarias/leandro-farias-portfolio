@@ -21,7 +21,7 @@ export function LocationAndProfission({
           <p className="text-4xl">{description}</p>
         )}
       </div>
-      <Icon className="text-muted-foreground/60 pr-3 text-7xl transition-transform duration-300 group-hover:-translate-x-2 xl:text-5xl" />
+      <Icon className="text-muted-foreground/60 pr-3 text-5xl sm:text-7xl transition-transform duration-300 group-hover:-translate-x-2 xl:text-5xl" />
     </>
   );
 }

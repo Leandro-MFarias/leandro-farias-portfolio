@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <section
       ref={homeRef}
-      className="flex w-full flex-col items-center justify-center space-y-2.5 px-6 xl:flex-row xl:space-x-2.5"
+      className="flex w-full flex-col items-center justify-center space-y-2.5 px-6 xl:flex-row xl:space-x-2.5 xl:mb-30"
       id="hero"
     >
       {/* LEFT  */}
