@@ -5,20 +5,20 @@ import { createContext, ReactNode, RefObject, useContext, useRef, useState } fro
 interface MenuContextProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
-  homeRef: RefObject<HTMLElement>;
-  aboutRef: RefObject<HTMLElement>;
-  projectsRef: RefObject<HTMLElement>;
-  contactRef: RefObject<HTMLElement>;
+  homeRef: RefObject<HTMLElement | null>;
+  aboutRef: RefObject<HTMLElement | null>;
+  projectsRef: RefObject<HTMLElement | null>;
+  contactRef: RefObject<HTMLElement | null>;
 }
 
 const MenuContext = createContext<MenuContextProps | undefined>(undefined);
 
 export function MenuProvider({ children }: { children: ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const homeRef = useRef<HTMLElement>(null);
-  const aboutRef = useRef<HTMLElement>(null);
-  const projectsRef = useRef<HTMLElement>(null);
-  const contactRef = useRef<HTMLElement>(null);
+  const homeRef = useRef<HTMLElement | null>(null);
+  const aboutRef = useRef<HTMLElement | null>(null);
+  const projectsRef = useRef<HTMLElement | null>(null);
+  const contactRef = useRef<HTMLElement | null>(null);
 
   return (
     <MenuContext.Provider
