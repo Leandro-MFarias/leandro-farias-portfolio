@@ -34,7 +34,7 @@ export function ButtonsHeader({ mobile }: ButtonsHeaderProps) {
     { label: "contato", href: contactRef },
   ];
 
-  function handleClick(e: React.MouseEvent, ref: React.RefObject<HTMLElement>) {
+  function handleClick(e: React.MouseEvent, ref: React.RefObject<HTMLElement | null>) {
     e.preventDefault();
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
