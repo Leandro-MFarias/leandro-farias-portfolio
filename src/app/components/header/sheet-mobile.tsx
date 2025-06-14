@@ -45,7 +45,7 @@ export function SheetMobile() {
           <div className="mt-6 h-0.5 w-full rounded-md bg-white" />
           <Image
             className="self-center"
-            src="/cordenadas.png"
+            src="/outer/cordenadas.png"
             width={324}
             height={226}
             alt="Cordenadas OW"

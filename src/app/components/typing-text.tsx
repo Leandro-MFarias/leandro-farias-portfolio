@@ -25,7 +25,7 @@ export function TypingText() {
   }, []);
 
   return (
-    <p className="flex items-center text-[32px]">
+    <p className="flex items-center text-2xl sm:text-[32px]">
       {secondaryText[secondary].split("").map((letter, index) => (
         <motion.span
           initial={{
