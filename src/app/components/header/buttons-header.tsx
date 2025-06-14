@@ -13,9 +13,9 @@ export const button = tv({
   variants: {
     variant: {
       default:
-        "py-1 px-4 rounded-xl bg-neutral-900 border shadow-md text-white text-sm hover:bg-zinc-800",
+        "py-1 px-6 rounded-2xl bg-neutral-900 border shadow-md text-white hover:bg-zinc-800",
       mobile:
-        "flex items-center justify-between text-5xl text-white hover:scale-105 transition duration-200 ease-in-out hover:text-purple-600",
+        "text-5xl text-white hover:scale-105 transition duration-200 ease-in-out hover:text-purple-600",
     },
   },
   defaultVariants: {
@@ -34,7 +34,10 @@ export function ButtonsHeader({ mobile }: ButtonsHeaderProps) {
     { label: "contato", href: contactRef },
   ];
 
-  function handleClick(e: React.MouseEvent, ref: React.RefObject<HTMLElement | null>) {
+  function handleClick(
+    e: React.MouseEvent,
+    ref: React.RefObject<HTMLElement | null>,
+  ) {
     e.preventDefault();
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -46,11 +49,11 @@ export function ButtonsHeader({ mobile }: ButtonsHeaderProps) {
     <nav>
       <ul className={`flex gap-3 ${mobile && "flex-col space-y-12"}`}>
         {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className={button({ variant: mobile ? "mobile" : "default" })}
-          >
-            <button onClick={(e) => handleClick(e, item.href)}>
+          <li key={index} className={mobile && "flex justify-between items-center"}>
+            <button
+              onClick={(e) => handleClick(e, item.href)}
+              className={button({ variant: mobile ? "mobile" : "default" })}
+            >
               {item.label}
             </button>
             {mobile && (

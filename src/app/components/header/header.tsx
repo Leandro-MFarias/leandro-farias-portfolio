@@ -5,15 +5,15 @@ import { SheetMobile } from "./sheet-mobile";
 
 export function Header() {
   return (
-    <header className="w-full p-6 flex items-center justify-between">
-      <div className="flex items-center space-x-2">
+    <header className="flex w-full items-center justify-between p-6">
+      <div className="flex items-center space-x-3">
         <div className="flex items-center space-x-0.5">
-          <CodeXmlIcon className="text-purple-600" />
-          <span>dev</span>
+          <CodeXmlIcon className="h-8 w-8 text-purple-600" />
+          <span className="text-2xl">dev</span>
         </div>
         <Button
           variant="outline"
-          className="h-0 py-3 text-muted-foreground px-2"
+          className="text-muted-foreground h-0 px-2 py-3"
         >
           Portfolio
         </Button>
