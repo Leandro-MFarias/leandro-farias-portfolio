@@ -7,7 +7,7 @@ interface SocialProps extends VariantProps<typeof social> {
 }
 
 export const social = tv({
-  base: "shadow-hero group flex w-48 justify-center rounded-3xl bg-neutral-900/80 p-3 py-4 transition duration-110 ease-in xl:w-28",
+  base: "shadow-hero group flex w-full justify-center rounded-3xl bg-neutral-900/80 p-3 py-4 transition duration-110 ease-in xl:w-28",
   variants: {
     variant: {
       linkedin: "hover:bg-sky-500",

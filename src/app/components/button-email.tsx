@@ -29,7 +29,7 @@ export function EmailButton() {
   return (
     <div
       onClick={handleCopy}
-      className="shadow-hero group relative flex w-48 cursor-pointer justify-center rounded-3xl bg-neutral-900/80 p-3 py-4 transition duration-110 ease-in hover:bg-red-500 xl:w-28"
+      className="shadow-hero group relative flex w-full cursor-pointer justify-center rounded-3xl bg-neutral-900/80 p-3 py-4 transition duration-110 ease-in hover:bg-red-500 xl:w-28"
     >
       <span className="absolute top-1 right-1 hidden text-zinc-600 group-hover:block">
         {!hasCopied ? <File /> : <FileCheck2Icon />}
