@@ -36,6 +36,7 @@ export function Projects() {
   useEffect(() => {
     function updateSize() {
       if (innerWidth > 1024) {
+        setScrollTime(2)
         setSlideWidth(530);
       } else if (innerWidth >= 768) {
         setScrollTime(1);
