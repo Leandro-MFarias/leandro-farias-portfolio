@@ -5,15 +5,12 @@ import Image from "next/image";
 import { useMenu } from "../../context/useMenu";
 import { TypingText } from "../typing-text";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FiGithub } from "react-icons/fi";
 import { DiReact } from "react-icons/di";
 import { BsGlobe2 } from "react-icons/bs";
 import { RiGitlabLine } from "react-icons/ri";
 import { Container } from "./container";
 import { LocationAndProfission } from "./location-profission";
-import { Social } from "./social";
-import { EmailButton } from "../button-email";
+import { Social } from "../social";
 
 export function Hero() {
   const { homeRef } = useMenu();
@@ -52,21 +49,7 @@ export function Hero() {
         </Container>
 
         {/* SOCIAL */}
-        <div className="flex justify-around space-x-2.5">
-          <Social
-            href="https://www.linkedin.com/in/leandro-farias-dev/"
-            icon={FaLinkedinIn}
-            variant="linkedin"
-          />
-
-          <EmailButton />
-
-          <Social
-            href="https://github.com/Leandro-MFarias"
-            icon={FiGithub}
-            variant="github"
-          />
-        </div>
+        <Social size="hero" />
 
         <Container variant="center">
           <LocationAndProfission

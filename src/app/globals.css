@@ -10,12 +10,21 @@
   --breakpoint-bs: 428px;
 }
 
-@keyframes infinite-space {
+@keyframes infinite-space-y {
   from {
     transform: translateY(15px);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes infinite-space-x {
+  from {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -33,8 +42,12 @@
     animation: infinite-scroll 11s linear infinite;
   }
 
-  .animate-infinite-space {
-    animation: infinite-space 1s infinite alternate ease-in-out;
+  .animate-infinite-space-y {
+    animation: infinite-space-y 1.5s infinite alternate ease-in-out;
+  }
+
+  .animate-infinite-space-x {
+    animation: infinite-space-x 1.5s infinite alternate ease-in-out;
   }
 }
 
