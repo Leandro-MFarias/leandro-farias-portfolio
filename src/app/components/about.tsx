@@ -11,7 +11,7 @@ export function About() {
     <section
       ref={aboutRef}
       id="about"
-      className="relative space-y-14 px-6 lg:h-[80vh]"
+      className="space-y-14 px-6"
     >
       <div className="mx-auto flex flex-col items-center space-y-8 md:space-y-14">
         {/* HEADER */}
