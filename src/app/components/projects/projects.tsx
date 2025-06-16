@@ -36,7 +36,7 @@ export function Projects() {
   useEffect(() => {
     function updateSize() {
       if (innerWidth > 1024) {
-        setScrollTime(2)
+        setScrollTime(2);
         setSlideWidth(530);
       } else if (innerWidth >= 768) {
         setScrollTime(1);
@@ -82,7 +82,7 @@ export function Projects() {
       {/* CARROSSEL  */}
       <div className="bs:max-w-[416px] xs:max-w-[500px] flex w-screen max-w-[380px] items-center justify-center overflow-hidden md:max-w-[800px] lg:relative lg:max-w-[1000px] xl:max-w-[1200px] xl:space-x-4">
         <button
-          className={`text-muted-foreground xs:left-6 absolute left-0 z-50 cursor-pointer rounded-full p-1 transition duration-150 ease-in hover:bg-zinc-700 hover:text-white lg:-left-0.5 xl:static xl:z-0 xl:self-center xl:bg-zinc-900 xl:hover:bg-zinc-900`}
+          className={`text-muted-foreground xs:left-6 absolute left-2 z-50 cursor-pointer rounded-full p-1 transition duration-150 ease-in hover:bg-zinc-700 hover:text-white lg:-left-0.5 xl:static xl:z-0 xl:self-center xl:bg-zinc-900 xl:hover:bg-zinc-900`}
           onClick={prev}
         >
           <ArrowLeftIcon className="hidden xl:block" />
@@ -134,7 +134,7 @@ export function Projects() {
           </div>
         </div>
         <button
-          className={`text-muted-foreground xs:right-5 absolute right-0 z-50 cursor-pointer rounded-full p-1 transition duration-150 ease-in hover:bg-zinc-700 hover:text-white lg:right-0 xl:static xl:z-0 xl:self-center xl:bg-zinc-900 xl:hover:bg-zinc-900`}
+          className={`text-muted-foreground xs:right-5 absolute right-2 z-50 cursor-pointer rounded-full p-1 transition duration-150 ease-in hover:bg-zinc-700 hover:text-white lg:right-0 xl:static xl:z-0 xl:self-center xl:bg-zinc-900 xl:hover:bg-zinc-900`}
           onClick={next}
         >
           <ArrowRightIcon className="hidden xl:block" />
