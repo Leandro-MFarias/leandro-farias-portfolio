@@ -14,7 +14,7 @@ export function About() {
       className="relative space-y-14 px-6 lg:h-[80vh]"
     >
       <div className="mx-auto flex flex-col items-center space-y-8 md:space-y-14">
-        {/* ABOUT HEADER */}
+        {/* HEADER */}
         <div className="flex flex-col items-center">
           <Image src="/outer/eye.png" width={120} height={110} alt="Symbol OW" className="opacity-50" />
           <h2 className={`text-center text-4xl sm:text-start md:text-5xl`}>
