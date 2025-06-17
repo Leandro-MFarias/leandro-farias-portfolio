@@ -15,7 +15,7 @@ export const button = tv({
       default:
         "py-1 px-6 rounded-2xl bg-neutral-900 border shadow-md text-white hover:bg-zinc-800",
       mobile:
-        "text-5xl text-white hover:scale-105 transition duration-200 ease-in-out hover:text-purple-600",
+        "text-4xl text-white hover:scale-105 transition duration-200 ease-in-out hover:text-purple-600",
     },
   },
   defaultVariants: {
@@ -24,13 +24,13 @@ export const button = tv({
 });
 
 export function ButtonsHeader({ mobile }: ButtonsHeaderProps) {
-  const { setIsMenuOpen, aboutRef, homeRef, projectsRef, contactRef } =
+  const { setIsMenuOpen, aboutRef, expertiseRef, projectsRef, contactRef } =
     useMenu();
 
   const menuItems = [
-    { label: "home", href: homeRef },
     { label: "sobre", href: aboutRef },
     { label: "projetos", href: projectsRef },
+    { label: "especialidades", href: expertiseRef },
     { label: "contato", href: contactRef },
   ];
 

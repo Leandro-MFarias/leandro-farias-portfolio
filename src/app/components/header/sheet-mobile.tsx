@@ -42,7 +42,7 @@ export function SheetMobile() {
             <ButtonsHeader mobile="mobile" />
           </div>
 
-          <div className="mt-6 h-0.5 w-full rounded-md bg-white" />
+          <div className="mt-2 h-0.5 w-full rounded-md bg-white" />
           <Image
             className="self-center"
             src="/outer/cordenadas.png"

@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, ReactNode, RefObject, useContext, useRef, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  RefObject,
+  useContext,
+  useRef,
+  useState,
+} from "react";
 
 interface MenuContextProps {
   isMenuOpen: boolean;
@@ -8,6 +15,7 @@ interface MenuContextProps {
   homeRef: RefObject<HTMLElement | null>;
   aboutRef: RefObject<HTMLElement | null>;
   projectsRef: RefObject<HTMLElement | null>;
+  expertiseRef: RefObject<HTMLElement | null>;
   contactRef: RefObject<HTMLElement | null>;
 }
 
@@ -18,11 +26,20 @@ export function MenuProvider({ children }: { children: ReactNode }) {
   const homeRef = useRef<HTMLElement | null>(null);
   const aboutRef = useRef<HTMLElement | null>(null);
   const projectsRef = useRef<HTMLElement | null>(null);
+  const expertiseRef = useRef<HTMLElement | null>(null);
   const contactRef = useRef<HTMLElement | null>(null);
 
   return (
     <MenuContext.Provider
-      value={{ isMenuOpen, setIsMenuOpen, homeRef, aboutRef, projectsRef, contactRef }}
+      value={{
+        isMenuOpen,
+        setIsMenuOpen,
+        homeRef,
+        aboutRef,
+        projectsRef,
+        expertiseRef,
+        contactRef,
+      }}
     >
       {children}
     </MenuContext.Provider>
