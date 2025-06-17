@@ -17,7 +17,7 @@ export function Hero() {
     >
       {/* LEFT  */}
       <Container variant="left">
-        <div className="group flex items-center justify-between">
+        <div className="flex items-center justify-between">
           <Avatar className="h-20 w-20">
             <AvatarImage src="/hello-apple.png" />
           </Avatar>

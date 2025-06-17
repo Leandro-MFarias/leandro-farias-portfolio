@@ -11,7 +11,7 @@ export const container = tv({
   base: "w-full flex rounded-3xl bg-neutral-900/80 shadow-hero px-5 space-y-2.5",
   variants: {
     variant: {
-      left: "flex-col justify-around space-y-6 py-6 xl:h-[360px] xl:w-[372px] xl:py-4",
+      left: "group flex-col justify-around space-y-6 py-6 xl:h-[360px] xl:w-[372px] xl:py-4",
       center:
         "group items-center justify-between space-y-2.5 py-3.5 xl:w-[400px]",
       right:
