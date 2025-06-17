@@ -1,4 +1,5 @@
 import { About } from "./components/about";
+import { Expertise } from "./components/expertise/expertise";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header/header";
 import { Hero } from "./components/hero/hero";
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Expertise />
         <Footer />
       </main>
     </div>
