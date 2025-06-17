@@ -7,11 +7,11 @@ import { SiGmail } from "react-icons/si";
 import { tv, VariantProps } from "tailwind-variants";
 
 export const emailButton = tv({
-  base: "shadow-hero group relative flex w-full cursor-pointer justify-center rounded-3xl bg-neutral-900/80 transition duration-110 ease-in hover:bg-red-500",
+  base: "shadow-hero group relative flex w-full cursor-pointer justify-center rounded-3xl transition duration-110 ease-in hover:bg-red-500",
   variants: {
     size: {
-      hero: "w-full xl:w-28",
-      footer: "p-4 w-full",
+      hero: "w-full xl:w-28 bg-neutral-900/80",
+      footer: "p-4 w-full bg-black/50 w-24 xs:w-32",
     }
   }
 })

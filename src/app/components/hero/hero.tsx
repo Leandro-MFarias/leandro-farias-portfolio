@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 
-import { useMenu } from "../../context/useMenu";
 import { TypingText } from "../typing-text";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { DiReact } from "react-icons/di";
@@ -13,12 +10,9 @@ import { LocationAndProfission } from "./location-profission";
 import { Social } from "../social";
 
 export function Hero() {
-  const { homeRef } = useMenu();
-
   return (
     <section
-      ref={homeRef}
-      className="flex w-full flex-col items-center justify-center space-y-2.5 px-6 xl:flex-row xl:space-x-2.5 xl:mb-30"
+      className="flex w-full flex-col items-center justify-center space-y-2.5 px-6 xl:mb-30 xl:flex-row xl:space-x-2.5"
       id="hero"
     >
       {/* LEFT  */}

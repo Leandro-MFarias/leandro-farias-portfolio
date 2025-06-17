@@ -7,15 +7,17 @@ import { Projects } from "./components/projects/projects";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto text-white space-y-20">
-      <Header />
-      <main className="max-w-5xl xl:max-w-7xl mx-auto space-y-18 mb-12">
-        <Hero />
-        <About />
-        <Projects />
-        <Expertise />
-        <Footer />
-      </main>
-    </div>
+    <>
+      <div className="relative mx-auto max-w-7xl space-y-20 text-white">
+        <Header />
+        <main className="mx-auto mb-12 max-w-5xl space-y-18 xl:max-w-7xl">
+          <Hero />
+          <About />
+          <Projects />
+          <Expertise />
+        </main>
+      </div>
+      <Footer />
+    </>
   );
 }

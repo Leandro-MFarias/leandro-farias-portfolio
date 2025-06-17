@@ -1,11 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { ButtonsHeader } from "./buttons-header";
 import { CodeXmlIcon } from "lucide-react";
 import { SheetMobile } from "./sheet-mobile";
+import { useMenu } from "@/app/context/useMenu";
 
 export function Header() {
+  const { homeRef } = useMenu()
+
   return (
-    <header className="flex w-full items-center justify-between p-6">
+    <header ref={homeRef} className="flex w-full items-center justify-between p-6">
       <div className="flex items-center space-x-3">
         <div className="flex items-center space-x-0.5">
           <CodeXmlIcon className="h-8 w-8 text-purple-600" />

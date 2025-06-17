@@ -9,7 +9,7 @@ type SocialProps = Pick<VariantProps<typeof social>, "size">;
 export function Social({ size }: SocialProps) {
   return (
     <div
-      className={`flex justify-center space-x-2.5 ${size === "footer" && "w-full xs:justify-start xs:max-w-[70%] space-x-4 md:max-w-[80%] xl:space-x-10"}`}
+      className={`flex justify-center space-x-2.5 ${size === "footer" && ""}`}
     >
       <SocialItems
         href="https://www.linkedin.com/in/leandro-farias-dev/"
