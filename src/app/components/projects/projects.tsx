@@ -99,7 +99,7 @@ export function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`shadow-hero xs:h-[480px] xs:w-[460px] bs:w-[412px] flex w-[380px] flex-col justify-around space-y-6 rounded-3xl bg-neutral-900/80 p-6 py-7 md:w-[480px] xl:w-[520px]`}
+                className={`shadow-hero xs:h-[480px] xs:w-[460px] bs:w-[412px] flex w-[380px] flex-col justify-around space-y-6 rounded-3xl bg-neutral-900/80 p-6 py-7 md:w-[480px] xl:w-[520px] hover:rotate-1 transition duration-300 ease-linear`}
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
